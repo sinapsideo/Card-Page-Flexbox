@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+body {
+  font-family: 'Lexend Deca', sans-serif;
+  margin: 0 auto;
+  background: hsl(0, 0%, 95%);
+
+}
+
+/***** DESIGN BOXES ********/
+#box1 {
+  background-color: #e38826;
+  background-image: linear-gradient(62deg, #e38826 0%, #ffb25d 100%);
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+#box2 {
+  background-color: #006970;
+  background-image: linear-gradient(45deg, #006970 0%, #00a6b1 100%);
+}
+
+#box3 {
+  background-color: #004241;
+  background-image: linear-gradient(45deg, #004241 0%, #008380 100%);
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+@media (max-width:600px){
+  #box1 {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 0;
+  }
+  #box3 {
+    border-bottom-left-radius: 15px;
+    border-top-right-radius: 0;
+  }
+  .container {
+    padding: 70px 0 70px 0;
+    height: 1440px;
+  }
+  .attribution {
+    font-size: 6px;
+  }
+}
+
+@media (min-width:600px){
+  .container {
+    height: 100vh;
+  }
+
+}
+/****** DESIGN INTERNO *******/
+.container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.box {
+  width: 300px;
+  height: 480px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 15px;
+  box-shadow: 15px 15px 15px lightgray;
+}
+
+.title_name, .description {
+  color: hsla(0, 0%, 100%, 0.75);
+  text-align: left;
+  padding: 45px;
+}
+
+.title_name {
+  font-family: 'Big Shoulders Display';
+  font-size: 40px;
+  color: hsl(0, 0%, 95%);
+  padding-bottom: 0;
+}
+
+.button_id {
+  padding-top: 30px;
+  margin-left: 45px;
+}
+
+a {
+  text-decoration: none;
+  font-style: none;
+  background: hsl(0, 0%, 95%);
+  border: 2px solid hsl(0, 0%, 95%);
+  padding: 10px 20px;
+  border-radius: 30px;
+  transition: .3s ease-in-out;
+}
+
+#learn_more_1 {
+  color: hsl(31, 77%, 52%);
+}
+
+#learn_more_2 {
+  color: hsl(184, 100%, 22%);
+}
+
+#learn_more_3 {
+  color: hsl(179, 100%, 13%);
+}
+
+a:hover {
+  background: none;
+  color: hsl(0, 0%, 95%) !important;
+}
+
+.logos {
+  margin-left: 45px;
+  transition: .3s;
+}
+
+.logos>img:hover {
+  filter: brightness(200%);
+}
+
+.attribution {
+  margin-top: -25px;;
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
